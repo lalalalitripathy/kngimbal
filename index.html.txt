@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>75% Larix Safe Area</title>
+    <style>
+        /* Ensures the widget takes up the full screen and is fully transparent */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: transparent !important;
+            overflow: hidden;
+        }
+
+        /* Left side cutoff mask */
+        .left-mask {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 12.5%;
+            background-color: rgba(0, 0, 0, 0.4); /* 40% black tint */
+            border-right: 3px solid #FF0000; /* Bright red guide line */
+        }
+
+        /* Right side cutoff mask */
+        .right-mask {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 12.5%;
+            background-color: rgba(0, 0, 0, 0.4); /* 40% black tint */
+            border-left: 3px solid #FF0000; /* Bright red guide line */
+        }
+    </style>
+</head>
+<body>
+    <div class="left-mask"></div>
+    <div class="right-mask"></div>
+</body>
+</html>
